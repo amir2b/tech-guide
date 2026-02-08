@@ -57,12 +57,16 @@ openssl pkcs12 -in client.p12 -nocerts -nodes -out client.key
 ## Verify the Files
 
 ```shell
-# Check certificate
+## Check certificate
 openssl x509 -in client.crt -text -noout
 
-# Check private key
+## Check private key
 openssl rsa -in client.key -check -noout
 
-# Verify certificate was issued by CA
+## Verify certificate was issued by CA
 openssl verify -CAfile ca.pem client.crt
+
+## Verify your certificate and key match:
+openssl x509 -noout -modulus -in client.crt | openssl md5
+openssl rsa  -noout -modulus -in client.key | openssl md5
 ```
