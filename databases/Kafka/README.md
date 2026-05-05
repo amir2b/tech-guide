@@ -1,0 +1,43 @@
+# Kafka
+
+- Kafka fundamentals
+  - topics, partitions, offsets
+  - brokers, replication
+  - ordering and retention
+  - producer/consumer model
+  - Producers
+    - keys and partitioning
+    - acknowledgments and retries
+    - idempotent producer
+    - batching and compression
+  - Consumers
+    - consumer groups
+    - offset commits
+    - rebalancing
+    - delivery semantics
+- Kafka UI (Akhq, RedpandaUI or KafkaUI)
+  - topic and message browsing
+  - consumer group lag
+  - basic troubleshooting
+- Schema Registry
+  - schema management
+  - versioning
+  - compatibility modes
+  - Avro and JSON Schema
+    - serialization basics
+    - schema evolution
+    - Avro vs JSON Schema
+- Kafka Connect
+  - source and sink connectors
+  - distributed connect workers
+  - converters and error handling
+  - PostgreSQL sink and source normal connector
+  - PostgreSQL sink and source cdc connector
+  - ElasticSearch sink connector
+- Operational best practices
+  - topic naming
+  - partition count
+  - retention and compaction
+  - monitoring and lag
+  - dead-letter patterns
+  - KRaft VS Zookeeper
