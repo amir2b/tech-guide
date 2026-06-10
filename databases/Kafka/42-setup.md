@@ -125,7 +125,7 @@ services:
           memory: 500M
 
   kibana:
-    image: kibana:9.3.0
+    image: kibana:8.19.14
     container_name: kibana
     environment:
       ELASTICSEARCH_HOSTS: http://elasticsearch:9200
